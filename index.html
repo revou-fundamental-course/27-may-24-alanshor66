@@ -20,10 +20,8 @@
         
     </nav>
     
-    <hr>
-
     
-<section>
+<section class="section">
     <!-- Home -->
     <section class="home" id="home">
         <header>
@@ -35,7 +33,6 @@
             </p>
 
             <div class="banner-container">
-
             </div>
         </article>
     </section>
@@ -43,8 +40,8 @@
 
     <!-- Our Facilities -->
     <section class="facilities" id="facilities">
-       <header>
-            <h1>Our Facilities</h1>
+        <header>
+            <h2>Facilities</h2>
         </header>
         <article class="facility-list">
             <div>
@@ -61,8 +58,6 @@
             </div>
             
         </article>
-
-       
     </section>
     <hr>
 
@@ -75,43 +70,45 @@
         <section class="message-us-section">
             <!-- form -->
             <section class="form-container">
-                <form action="">
-                    <label for="nama" class="">Nama</label>
-                    <input type="text">
-                    <label for="tglLahir" class="">Tanggal Lahir</label>
-                    <input type="date">
-                    <label for="jenisKelamin" class="">Jenis Kelamin</label>
-                    <input type="radio" name="jenisKelamin" id="lakilaki">    <label for="lakilaki">Laki-Laki</label>
-                    <input type="radio" name="jenisKelamin" id="perempuan">    <label for="perempuan">perempuan</label>
-                    <label for="alamat">Pesan:</label>
-                    <textarea id="pesan" name="pesan" rows="4" required></textarea>
-                    <input type="submit" value="Kirim">
+                <form id="formulir">
+                    <label for="nama" class="">Nama :</label>
+                    <input type="text" id="nama" name="nama"> <br>
 
+                    <label for="tglLahir" class="">Tanggal Lahir :</label>
+                    <input type="date" id="tglLahir" name="tglLahir"> <br>
+
+                    <label>Jenis Kelamin:</label><br>
+                    <input type="radio" id="lakilaki" name="jenisKelamin" value="lakilaki" required>
+                    <label for="lakilaki">Laki-laki</label><br>
+                    <input type="radio" id="perempuan" name="jenisKelamin" value="perempuan">
+                    <label for="perempuan">Perempuan</label><br>
+                    
+                    <label for="pesan">Pesan :</label>
+                    <textarea id="pesan" name="pesan" rows="4" required></textarea> <br>
+                    
+                    <button type="submit" id="submit">Kirim</button>
+                    
                 </form>
+               
             </section>
 
             <!-- Result -->
             <section class="result-container">
                 <div class="form-result">
-                    <p><b>Current Time </b>: Fri Mei 27 2024 22:21:22 GMT+7</p>
-                    <p>
-                        <b>Nama </b>: Anshor <br>
-                        <b>Tanggal Lahir </b>: 08/09/1996 <br>
-                        <b>Jenis Kelamin </b>: Laki-laki <br>
-                        <b>Pesan </b>: Saya sangat senang belaja membuat Website
-                    </p>
-
-
+                    <textarea id="result" rows="15" cols="20" readonly></textarea>
                 </div>
             </section>
+
         </section>
     </section>
 </section>
    
-
-    <footer>
-
-    </footer>
+<footer class="footer">
+    <p>&copy; 2024 Anshori. All Rights Reserved.</p>
+</footer>
     
+<script src="js/scripts.js">/script>
+</script>
+
 </body>
 </html>

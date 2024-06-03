@@ -4,6 +4,7 @@ body{
     font-family: Source Sans Pro, sans-serif;  
     margin:0;
     box-sizing: border-box;
+    min-width:fit-content;
     
 }
 
@@ -36,7 +37,7 @@ nav{
     padding: 10px 10px;
 }
 
-nav>section{
+nav section{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -55,8 +56,8 @@ nav>section{
     
 }
 .nav-item:hover {
-    background-color: #17c1ea;
-    color: #040404;
+    background-color: #00429a;
+    color: #ffffff;
     font-size: 18px;
     font-weight: bold;
 }
@@ -74,11 +75,11 @@ p{
     margin: 40px;
 }
 .banner-container{
-    height: 500px;
+
+    height: 280px;
     width: 100%;
-    background-image: url(../assets/ans.jpg);
-    background-color: rgb(92, 90, 90);
-    background-size:cover;
+    background-image: url(../assets/ans.png);
+    background-size:contain;
     background-repeat: no-repeat;
 }
 hr{
@@ -189,6 +190,11 @@ button {
     font-size: 16px;
 }
 
+.radio{
+    width: 10%;
+    padding: 1px;
+}
+
 button:hover {
     background-color: #45a049;
 }
@@ -201,7 +207,6 @@ button:hover {
     flex: 1;
     margin-left: 40px;
     margin-right: 40px;
-    min-width: fit-content;
 }
 
 /* untuk menampilkan hasil inputan form */
@@ -210,7 +215,8 @@ button:hover {
     width: 94%;
     border: 1px solid #b6b2b2;
     border-radius: 8px;
-    min-width: fit-content;
+    font-size: 14px;
+    min-width: min-content;
 }
 
 

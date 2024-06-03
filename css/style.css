@@ -190,16 +190,11 @@ button {
     font-size: 16px;
 }
 
-.radio{
-    width: 10%;
-    padding: 1px;
-}
+
 
 button:hover {
     background-color: #45a049;
 }
-
-
 
 
 /* Pembungkus Textarea*/
@@ -211,12 +206,13 @@ button:hover {
 
 /* untuk menampilkan hasil inputan form */
 .form-result>textarea{
-    height: 364px;
+    height: 320px;
     width: 94%;
     border: 1px solid #b6b2b2;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 16px;
     min-width: min-content;
+    padding: 20px;
 }
 
 

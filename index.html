@@ -36,7 +36,7 @@
             </div>
         </article>
     </section>
-    <hr>
+    <!-- akhir Home -->
 
     <!-- Our Facilities -->
     <section class="facilities" id="facilities">
@@ -45,21 +45,21 @@
         </header>
         <article class="facility-list">
             <div>
-                <div class="container-facilities"></div>
-                <h5>Free Refill</h5>
+                <div class="facility-satu"></div>
+                <h4>Free Refill</h4>
             </div>
             <div>
-                <div class="container-facilities"></div>
-                <h5>Bonus</h5>
+                <div class="facility-dua"></div>
+                <h4>Bonus</h4>
             </div>
             <div>
-                <div class="container-facilities"></div>
-                <h5>Murah</h5>
+                <div class="facility-tiga"></div>
+                <h4>Murah</h4>
             </div>
             
         </article>
     </section>
-    <hr>
+    <!-- akhir our facilities -->
 
     <!-- Message Us -->
     <section class="message-us" id="message-us">
@@ -71,21 +71,25 @@
             <!-- form -->
             <section class="form-container">
                 <form id="formulir">
-                    <label for="nama" class="">Nama :</label>
-                    <input type="text" id="nama" name="nama"> <br>
-
-                    <label for="tglLahir" class="">Tanggal Lahir :</label>
-                    <input type="date" id="tglLahir" name="tglLahir"> <br>
-
-                    <label>Jenis Kelamin:</label><br>
-                    <input type="radio" id="lakilaki" name="jenisKelamin" value="lakilaki" required>
-                    <label for="lakilaki">Laki-laki</label><br>
-                    <input type="radio" id="perempuan" name="jenisKelamin" value="perempuan">
-                    <label for="perempuan">Perempuan</label><br>
-                    
-                    <label for="pesan">Pesan :</label>
-                    <textarea id="pesan" name="pesan" rows="4" required></textarea> <br>
-                    
+                    <div class="form-group">
+                        <label for="nama" class="">Nama :</label>
+                        <input type="text" id="nama" name="nama">
+                    </div>
+                    <div class="form-group">
+                        <label for="tglLahir" class="">Tanggal Lahir :</label>
+                        <input type="date" id="tglLahir" name="tglLahir"> <br>
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin:</label><br>
+                        <input type="radio" id="lakilaki" name="jenisKelamin" value="lakilaki" required>
+                        <label for="lakilaki">Laki-laki</label><br>
+                        <input type="radio" id="perempuan" name="jenisKelamin" value="perempuan">
+                        <label for="perempuan">Perempuan</label><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan :</label>
+                        <textarea id="pesan" name="pesan" rows="4" required></textarea> <br>
+                    </div>
                     <button type="submit" id="submit">Kirim</button>
                     
                 </form>
@@ -101,10 +105,12 @@
 
         </section>
     </section>
+    <!-- akhir message us -->
+
 </section>
    
 <footer class="footer">
-    <p>&copy; 2024 Anshori. All Rights Reserved.</p>
+    <p>&copy;Copyright 2024 built by. Anshori</p>
 </footer>
     
 <script src="js/scripts.js">/script>

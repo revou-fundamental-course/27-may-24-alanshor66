@@ -4,13 +4,18 @@ body{
     font-family: Source Sans Pro, sans-serif;  
     margin:0;
     box-sizing: border-box;
+    
 }
 
+.section{
+    display: flex;
+    flex-direction: column;
+}
 .logo-icon{
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background-image: url(https://picsum.photos/200);
+    background-image: url(../assets/logo.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -19,7 +24,6 @@ body{
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    background-image: url(https://picsum.photos/200);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -28,7 +32,7 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
-    background-color:#074209;
+    background-color:#1e2a3d;
     padding: 10px 10px;
 }
 
@@ -40,8 +44,7 @@ nav>section{
 }
 
 .nav-item{
-    border-radius: 5%;
-    margin: 0px;
+    border-radius: 5px;
     padding-top: 12px;
     padding-right: 12px;
     padding-bottom: 12px;
@@ -52,7 +55,7 @@ nav>section{
     
 }
 .nav-item:hover {
-    background-color: #049b29;
+    background-color: #17c1ea;
     color: #040404;
     font-size: 18px;
     font-weight: bold;
@@ -64,28 +67,27 @@ h2{
 
 .home{
    text-align: justify;
-   margin:0;
+   background-color: #ffffff;
 }
 
-article{
+p{
     margin: 40px;
 }
 .banner-container{
-    padding: 2px;
-    height: 300px;
-    background-image: url(https://picsum.photos/200);
-    background-color: rgb(255, 255, 255);
-    background-size: cover;
+    height: 500px;
+    width: 100%;
+    background-image: url(../assets/ans.jpg);
+    background-color: rgb(92, 90, 90);
+    background-size:cover;
     background-repeat: no-repeat;
-    margin: 0px;
 }
 hr{
 border: 1px solid rgb(241, 241, 241);
 }
 
 .facilities{
-   
-    margin:0;
+    background-color: #eee;
+    min-height: 350px;
    
 }
 
@@ -94,20 +96,43 @@ border: 1px solid rgb(241, 241, 241);
     justify-content: space-around;
     text-align: center;
     margin: 20px;
-    display:flex;
     
 }
 
-.container-facilities{
-    width: 100px;
-    height: 100px;
+.facility-satu, 
+.facility-dua,
+.facility-tiga{
+    width: 150px;
+    height: 150px;
     background-color: #074209;
     border-radius: 50%;
-    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+   
 }
 
+
+.facility-satu{
+    background-image: url(../assets/1.png);
+}
+
+.facility-dua{
+    background-image: url(../assets/2.png);
+}
+
+.facility-tiga{
+    background-image: url(../assets/3.png);
+}
+
+.facility-satu:hover, 
+.facility-dua:hover,
+.facility-tiga:hover{
+    width: 200px;
+    height: 200px;
+}
 .message-us{
-   margin:0;
+ padding-bottom: 40px;
 }
 
 .message-us-section{
@@ -124,48 +149,59 @@ border: 1px solid rgb(241, 241, 241);
 
 form {
     margin-left:40px;
-    display:block;
     padding: 20px;
     border: 1px solid hsl(0, 0%, 80%);
     border-radius: 10px;
-    background-color: #f3eeee;
+    background-color: #eee;
+    min-width: fit-content;
 }
 
-label {
-   
-    font-weight: bold;
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
-input[type="text"],
-input[type="date"],
-textarea {
-    width: 100%;
+.form-group label {
+    width: 30%;
+    margin-right: 10px;
+    color: #666;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 70%;
     padding: 10px;
-    border: 1px solid #b6b2b2;
+    border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
-    resize: none;
+    color: #333;
 }
-button{
+
+button {
+    width: 100%;
+    padding: 10px;
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    
 }
+
 button:hover {
     background-color: #45a049;
-    
 }
+
+
+
 
 /* Pembungkus Textarea*/
 .result-container{
     flex: 1;
     margin-left: 40px;
     margin-right: 40px;
+    min-width: fit-content;
 }
 
 /* untuk menampilkan hasil inputan form */
@@ -174,12 +210,14 @@ button:hover {
     width: 94%;
     border: 1px solid #b6b2b2;
     border-radius: 8px;
+    min-width: fit-content;
 }
 
 
-footer{
-    background-color: #ccc;
-    padding: 20px;
+.footer{
+
+    background-color: #eee;
+    padding: 1px;
     text-align: center;
 
 }

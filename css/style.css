@@ -78,10 +78,13 @@ p{
 
     height: 280px;
     width: 100%;
-    background-image: url(../assets/ans.png);
-    background-size:contain;
-    background-repeat: no-repeat;
 }
+
+.banner-container img{
+    width: 100%;
+    height: auto;
+}
+
 hr{
 border: 1px solid rgb(241, 241, 241);
 }
@@ -94,9 +97,10 @@ border: 1px solid rgb(241, 241, 241);
 
 .facility-list{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
     margin: 20px;
+    flex-wrap: wrap;
     
 }
 
@@ -141,11 +145,13 @@ border: 1px solid rgb(241, 241, 241);
     flex: 1;
     justify-content:left;
     align-content: center;
+    flex-wrap: wrap;
 }
 
 .form-container{
     flex: 1;
     margin-right: 40px;
+    margin-bottom: 40px;
 }
 
 form {
@@ -175,7 +181,7 @@ form {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1em;
     color: #333;
 }
 
@@ -187,12 +193,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-}
-
-.radio{
-    width: 10%;
-    padding: 1px;
+    font-size:1em;
 }
 
 button:hover {
@@ -200,23 +201,23 @@ button:hover {
 }
 
 
-
-
 /* Pembungkus Textarea*/
 .result-container{
     flex: 1;
     margin-left: 40px;
     margin-right: 40px;
+    margin-bottom: 40px;
 }
 
 /* untuk menampilkan hasil inputan form */
 .form-result>textarea{
-    height: 364px;
+    height: 300px;
     width: 94%;
     border: 1px solid #b6b2b2;
     border-radius: 8px;
-    font-size: 14px;
-    min-width: min-content;
+    font-size: 1em;
+    min-width: 170px;
+    padding: 20px;
 }
 
 

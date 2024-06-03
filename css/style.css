@@ -40,7 +40,6 @@ nav>section{
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
 }
 
 .nav-item{
@@ -52,8 +51,8 @@ nav>section{
     color: white;
     text-decoration: none;
     font-size: 17px;
-    
 }
+
 .nav-item:hover {
     background-color: #17c1ea;
     color: #040404;
@@ -73,6 +72,7 @@ h2{
 p{
     margin: 40px;
 }
+
 .banner-container{
     height: 500px;
     width: 100%;
@@ -81,14 +81,10 @@ p{
     background-size:cover;
     background-repeat: no-repeat;
 }
-hr{
-border: 1px solid rgb(241, 241, 241);
-}
 
 .facilities{
     background-color: #eee;
     min-height: 350px;
-   
 }
 
 .facility-list{
@@ -109,9 +105,7 @@ border: 1px solid rgb(241, 241, 241);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0px;
-   
 }
-
 
 .facility-satu{
     background-image: url(../assets/1.png);
@@ -131,6 +125,7 @@ border: 1px solid rgb(241, 241, 241);
     width: 200px;
     height: 200px;
 }
+
 .message-us{
  padding-bottom: 40px;
 }
@@ -205,12 +200,13 @@ button:hover {
 }
 
 /* untuk menampilkan hasil inputan form */
-.form-result>textarea{
+.form-result textarea{
     height: 364px;
     width: 94%;
     border: 1px solid #b6b2b2;
     border-radius: 8px;
     min-width: fit-content;
+    font-size: 14px;
 }
 
 

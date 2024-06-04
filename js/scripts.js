@@ -1,3 +1,16 @@
+
+
+function replaceName(){
+let name = prompt("Siapakah nama anda?","");
+document.getElementById("name").innerHTML=name
+}
+replaceName();
+
+// document.getElementById('ubah').addEventListener("click", function(){
+//     replaceName();
+// })
+
+
 document.getElementById('formulir').addEventListener('submit', function(event) {
     event.preventDefault();  // Mencegah pengiriman formulir default
 

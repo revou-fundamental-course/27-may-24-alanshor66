@@ -1,8 +1,8 @@
 /* ini css */
 
 body{
+    
     font-family: Source Sans Pro, sans-serif;  
-    margin:0;
     box-sizing: border-box;
     min-width:fit-content;
     
@@ -12,6 +12,7 @@ body{
     display: flex;
     flex-direction: column;
 }
+
 .logo-icon{
     height: 50px;
     width: 50px;
@@ -31,10 +32,16 @@ body{
 
 
 nav{
+    
     display: flex;
     justify-content: space-between;
     background-color:#1e2a3d;
     padding: 10px 10px;
+    position:fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 nav section{
@@ -62,13 +69,13 @@ nav section{
     font-weight: bold;
 }
 
-h2{
+h2{margin-top: 90px;
     margin-left:40px;
 }
 
 .home{
-   text-align: justify;
-   background-color: #ffffff;
+    text-align: justify;
+    background-color: #ffffff;
 }
 
 p{
@@ -160,7 +167,7 @@ form {
     border: 1px solid hsl(0, 0%, 80%);
     border-radius: 10px;
     background-color: #eee;
-    min-width: fit-content;
+    min-width: 170px;
 }
 
 .form-group {

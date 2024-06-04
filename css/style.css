@@ -83,7 +83,7 @@ p{
 }
 .banner-container{
 
-    height: 280px;
+    height:max-content;
     width: 100%;
 }
 

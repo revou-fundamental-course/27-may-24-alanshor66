@@ -4,7 +4,11 @@ function replaceName(){
 let name = prompt("Siapakah nama anda?","");
 document.getElementById("name").innerHTML=name
 }
+
 replaceName();
+
+
+
 
 // document.getElementById('ubah').addEventListener("click", function(){
 //     replaceName();
@@ -35,5 +39,9 @@ document.getElementById('formulir').addEventListener('submit', function(event) {
 
     // Tampilkan pesan alert
     alert('Pesan telah tersubmit');
+    document.getElementById('nama').value ="";
+    document.getElementById('tglLahir').value ="";
+    document.getElementById('pesan').value ="";
+    
 });
 

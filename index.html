@@ -12,11 +12,18 @@
         <div class="logo-icon">
             
         </div>
-        <section class="nav-section">
+       
+        <section class="nav-section" id="navbar-nav">
             <a href="#home" class="nav-item">Home</a>
             <a href="#facilities" class="nav-item">Our Facilities</a>
             <a href="#message-us" class="nav-item">Message Us</a>
         </section>
+        
+        <div class="navbar-toggler" onclick="toggleNavbar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         
     </nav>
     
@@ -44,12 +51,10 @@
                         <div class="slide" id="slide3">
                             <img src="assets/so3.png" alt="Image 3">
                         </div>
-                        <div class="slide" id="slide4">
-                            <img src="assets/so2.png" alt="Image 4">
-                        </div>
+                       
                     </div>
-                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                    <button class="prev" id="prevButton">&#10094;</button>
+                    <button class="next" id="nextButton">&#10095;</button>
                 </div>
                 
                
@@ -66,15 +71,15 @@
         <div class="facility-list">
             <div class="container-facility">
                 <div class="facility-satu"></div>
-                <h4>Facility 1</h4>
+                <h4>Programming</h4>
             </div>
             <div class="container-facility">
                 <div class="facility-dua"></div>
-                <h4>Facility 2</h4>
+                <h4>Front-end Dev</h4>
             </div>
             <div class="container-facility">
                 <div class="facility-tiga"></div>
-                <h4>Facility</h4>
+                <h4>Back-end Dev</h4>
             </div>
             
         </div>
@@ -96,14 +101,14 @@
                         <input type="text" id="nama" name="nama" placeholder="Nama Anda" required>
                     </div>
                     <div class="form-group">
-                        <label for="tglLahir" class="">Tanggal Lahir :</label>
-                        <input type="date" id="tglLahir" name="tglLahir"> 
+                        <label for="tgl_lahir" class="">Tanggal Lahir :</label>
+                        <input type="date" id="tgl_lahir" name="tgl_lahir" required> 
                     </div>
                     <div class="form-group">
                         <label>Jenis Kelamin:</label>
-                        <input type="radio" id="lakilaki" name="jenisKelamin" value="Laki-laki" required>
+                        <input type="radio" id="lakilaki" name="jenis_kelamin" value="Laki-laki" required>
                         <label for="lakilaki">Laki-laki</label>
-                        <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+                        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
                         <label for="perempuan">Perempuan</label>
                     </div>
                     <div class="form-group">

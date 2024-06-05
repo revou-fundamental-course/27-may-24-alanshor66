@@ -29,8 +29,8 @@ document.getElementById('formulir').addEventListener('submit', function(event) {
     // Ambil nilai dari formulir
    
     const nama = document.getElementById('nama').value;
-    const tglLahir = document.getElementById('tglLahir').value;
-    const jenisKelamin = document.querySelector('input[name="jenisKelamin"]:checked').value;
+    const tglLahir = document.getElementById('tgl_lahir').value;
+    const jenisKelamin = document.querySelector('input[name="jenis_kelamin"]:checked').value;
     const pesan = document.getElementById('pesan').value;
 
     // Buat teks hasil inputan
@@ -42,21 +42,70 @@ document.getElementById('formulir').addEventListener('submit', function(event) {
     // Tampilkan pesan alert
     alert('Pesan telah tersubmit');
     document.getElementById('nama').value ="";
-    document.getElementById('tglLahir').value ="";
+    document.getElementById('tgl_lahir').value ="";
     document.getElementById('pesan').value ="";
     
 });
 
 
+
 // Function untuk Slider
 let currentSlide = 0;
+let autoSlideInterval;
 
 function moveSlide(direction) {
     const slides = document.querySelector('.slides');
     const totalSlides = document.querySelectorAll('.slide').length;
 
-    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+    if (!slides) {
+        console.error('Slides container not found');
+        return;
+    }
 
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
     const offset = -currentSlide * 100;
+    console.log(`Moving to slide ${currentSlide} with offset ${offset}%`);
     slides.style.transform = `translateX(${offset}%)`;
+}
+
+function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+        moveSlide(1);
+    }, 3000);  // Change slide every 3 seconds
+}
+
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    startAutoSlide();
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("Document is ready");
+    const prevButton = document.getElementById('prevButton');
+    const nextButton = document.getElementById('nextButton');
+
+    if (prevButton && nextButton) {
+        console.log("Buttons found");
+        prevButton.addEventListener('click', function() {
+            console.log("Prev button clicked");
+            moveSlide(-1);
+            resetAutoSlide();
+        });
+
+        nextButton.addEventListener('click', function() {
+            console.log("Next button clicked");
+            moveSlide(1);
+            resetAutoSlide();
+        });
+    } else {
+        console.error('Buttons not found');
+    }
+
+    startAutoSlide();
+});
+
+// Function untuk Toggler Navbar
+function toggleNavbar() {
+    var nav = document.getElementById("navbar-nav");
+    nav.classList.toggle("active");
 }

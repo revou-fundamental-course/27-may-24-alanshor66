@@ -10,7 +10,7 @@ body{
 }
 
 @media only screen and (max-width:600px){
-    nav{
+/*     nav{
        
         display: flex;
         flex-direction: column;
@@ -23,7 +23,7 @@ body{
     .nav-item{
         width: 100%;
     }
-
+ */
       
     
 }

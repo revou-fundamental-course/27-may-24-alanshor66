@@ -5,8 +5,29 @@ body{
     font-family: Source Sans Pro, sans-serif;  
     box-sizing: border-box;
     min-width:fit-content;
+    margin-top: 40px;
     
 }
+
+@media only screen and (max-width:600px){
+    nav{
+       
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-section{
+        flex-direction: column;
+    }
+
+    .nav-item{
+        width: 100%;
+    }
+
+      
+    
+}
+
 
 .section{
     display: flex;
@@ -69,7 +90,8 @@ nav section{
     font-weight: bold;
 }
 
-h2{margin-top: 90px;
+h2{ 
+    margin-top: 90px;
     margin-left:40px;
 }
 
@@ -82,14 +104,65 @@ p{
     margin: 40px;
 }
 .banner-container{
-
     height:max-content;
     width: 100%;
+    
 }
 
-.banner-container img{
+
+.slider {
+    position: relative;
     width: 100%;
-    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    animation: slide 16s infinite;
+}
+
+.slide {
+    
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.banner-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.slider button.prev {
+    left: 10px;
+}
+
+.slider button.next {
+    right: 10px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
 }
 
 hr{
@@ -192,7 +265,7 @@ form {
     color: #333;
 }
 
-button {
+.formulir button {
     width: 100%;
     padding: 10px;
     background-color: #4CAF50;

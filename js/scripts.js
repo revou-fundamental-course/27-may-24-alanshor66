@@ -1,11 +1,13 @@
 
 
+// Function untuk relace nama
 function replaceName(){
 let name = prompt("Siapakah nama anda?","");
 document.getElementById("name").innerHTML=name
 }
 
 replaceName();
+
 
 
 
@@ -45,3 +47,16 @@ document.getElementById('formulir').addEventListener('submit', function(event) {
     
 });
 
+
+// Function untuk Slider
+let currentSlide = 0;
+
+function moveSlide(direction) {
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+
+    const offset = -currentSlide * 100;
+    slides.style.transform = `translateX(${offset}%)`;
+}
